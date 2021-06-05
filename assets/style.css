@@ -8,6 +8,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    --backgroundSize: 1500px;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none!important;
+    border-bottom-style: none!important;
 }
 
 .toggle
@@ -43,8 +50,22 @@ section
 {
     position: relative;
     width: 100%;
-
+    background-image: url(images/white.jpg);
+    background-size: var(--backgroundSize);
+	animation: movingBackground 22s linear infinite;
+    height: 100%;
+	width: 100%;
 }
+
+@keyframes movingBackground {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: var(--backgroundSize) var(--backgroundSize);
+	}
+}
+
 .banner .imgSidebar
 {
     position: absolute;
@@ -95,7 +116,7 @@ section
 }
 .banner .contentBx h4 span
 {
-    color: #00bcd4;
+    color: #ad974f;
     font-size: 1.5em;
     font-weight: 700;
 }
@@ -115,7 +136,7 @@ p
 
 .btn
 {
-    background: #00bcd4;
+    background: #ad974f;
     color: #fff;
     padding: 10px 30px;
     display: inline-block;
@@ -163,7 +184,7 @@ p
 }
 .sidebar ul li a:hover
 {
-    color: #00bcd4
+    color: #ad974f
 }
 
 .sci{
@@ -199,7 +220,7 @@ p
 .title h2
 {
     position: relative;
-    color: #00bcd4;
+    color: #ad974f;
     font-size: 1.8em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -236,6 +257,9 @@ p
 .about 
 {
     background: #000;
+	
+	background-size: var(--backgroundSize);
+	animation: movingBackground 22s linear infinite;
 }
 .about .content
 {
@@ -422,7 +446,7 @@ color: #fff;
 }
 .contact .contactForm .row input[type="submit"]
 {
-background: #00bcd4;
+background: #ad974f;
 color: #fff;
 padding: 10px 30px;
 display: inline-block;
