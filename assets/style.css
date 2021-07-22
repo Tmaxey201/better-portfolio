@@ -152,10 +152,7 @@ p
     font-weight: 500;
     letter-spacing: 2px ;
 }
-.middle
-{
-   
-}
+
 .sidebar {
     position: fixed;
     background: #000;
@@ -279,7 +276,7 @@ p
 }
 .about .content .textBx 
 {
-    min-width: 49%;
+    min-width: 100%;
     width: 49%;
 }
 .about .content .textBx p
@@ -298,15 +295,24 @@ p
 }
 
 .mylist{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   
     color: white;
-    text-align: center;
+    text-align:start;
     list-style-type: none;
     margin: 40px;
     font-size: 1.1em;
     font-weight: 300;
+    
 }
 .listitem {
     margin: 10px;
+}
+
+.listitem:hover {
+    color: #ad974f;
 }
 .work .content
 {
